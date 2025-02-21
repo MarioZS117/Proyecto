@@ -12,6 +12,8 @@ app.get("/",(req,res)=>{
 });
 app.use("/usuarios",usuariosRoutes);
 
+app.use("/consultorio",usuariosRoutes);
+
 app.listen(port,()=>{
   console.log("Mi primer Servicio de usuarios!",port);
 });
